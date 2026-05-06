@@ -1,0 +1,22 @@
+{
+  "name": "Yasien Ghalwash",
+  "phdOpportunity": {
+    "status": "closed",
+    "title": "",
+    "titleFilled": "",
+    "description": "",
+    "descriptionFilled": "",
+    "futureNote": "",
+    "url": "",
+    "emailNote": ""
+  },
+  "title": "Ph.D. Student, Information Technology",
+  "email": "yasien.ghalwash@qut.edu.au",
+  "location": "Brisbane, Australia",
+  "avatar": "/images/avatar.jpg",
+  "scholar": "https://scholar.google.com/citations?user=75Z_2_MAAAAJ&hl=en",
+  "linkedin": "https://www.linkedin.com/in/yasien-essam99/",
+  "cv": "/files/Yasien_Ghalwash_CV.pdf",
+  "introduction": "I am a Ph.D. student in Information Technology at the Queensland University of Technology (QUT) in Brisbane, Australia. I am supervised by Prof. Raja Jurdak and Dr. Sara Khalifa. <br/><br/> Currently, my doctoral thesis focuses on \"Rethinking Energy Harvesters as Sensors: A New Paradigm for Continuous Motion Tracking.\" I am exploring how to leverage wearable solar harvesters to achieve continuous and energy-efficient tracking capabilities.<br/><br/> I previously graduated with a BSc in Biomedical Engineering from Cairo University, where I gained a strong foundation in Machine Learning, Computer Vision, Digital Signal Processing, and Embedded Systems.",
+  "team": []
+}

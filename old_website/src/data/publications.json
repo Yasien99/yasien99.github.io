@@ -1,0 +1,77 @@
+{
+  "items": [
+    {
+      "title": "From power to position: Continuous trajectory tracking with wearable solar harvesters",
+      "authors": [
+        "Y. Ghalwash",
+        "A. Khamis",
+        "M. Sandhu",
+        "S. Khalifa",
+        "R. Jurdak",
+        "S. K. Das"
+      ],
+      "venue": "IEEE Transactions on Mobile Computing (under review)",
+      "year": 2026,
+      "tags": [
+        "Solar Harvesters",
+        "Motion Tracking"
+      ],
+      "links": {}
+    },
+    {
+      "title": "SolarTrack: Exploring the Continuous Tracking Capabilities of Wearable Solar Harvesters",
+      "authors": [
+        "Y. Ghalwash",
+        "A. Khamis",
+        "M. Sandhu",
+        "S. Khalifa",
+        "R. Jurdak"
+      ],
+      "venue": "IEEE PerCom",
+      "year": 2026,
+      "tags": [
+        "Wearables",
+        "Motion Tracking"
+      ],
+      "links": {
+        "pdf": "https://eprints.qut.edu.au/262945/1/SolarTrack_PERCOM_2026_Camera_Ready_Version_15_.pdf"
+      }
+    },
+    {
+      "title": "Rethinking Energy Harvesters as Sensors: A New Paradigm for Continuous Motion Tracking",
+      "authors": [
+        "Y. Ghalwash"
+      ],
+      "venue": "IEEE PerCom PhD Forum",
+      "year": 2026,
+      "tags": [
+        "Energy Harvesting",
+        "Sensors"
+      ],
+      "links": {
+        "pdf": "https://eprints.qut.edu.au/263587/1/Rethinking_Energy_Harvesters_as_Sensors_A_new_Paradigm_for_Continuous_Motion_Tracking.pdf"
+      }
+    },
+    {
+      "title": "Computer-Aided System for Breast Cancer Lesion Segmentation and Classification Using Ultrasound Images",
+      "authors": [
+        "Saied Salem",
+        "Ahmed Mostafa",
+        "Yasien E. Ghalwash",
+        "Manar N. Mahmoud",
+        "Ahmed F. Elnokrashy",
+        "Ahmed M. Mahmoud"
+      ],
+      "venue": "EHB 2023",
+      "year": 2023,
+      "tags": [
+        "Deep Learning",
+        "Ultrasound"
+      ],
+      "links": {
+        "pdf": "https://www.researchgate.net/publication/376238446_Computer-Aided_System_for_Breast_Cancer_Lesion_Segmentation_and_Classification_Using_Ultrasound_Images#fullTextFileContent",
+        "video": "https://youtu.be/N53bXYM0_rg"
+      }
+    }
+  ]
+}
