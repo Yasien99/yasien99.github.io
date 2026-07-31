@@ -1,11 +1,17 @@
 ---
 title:          "SolarSim: Physics-Based Simulation of Wearable Solar Harvester Signals for Motion Sensing"
-date:           2026-01-02 00:00:00 +0000
+date:           2026-01-04 00:00:00 +0000
 selected:       true
-pub:            "ACM ISWC (A* Conference)"
+pub:            "ACM ISWC"
+type:           "conference"
 pub_date:       "2026"
-abstract: >-
-  <span class="badge badge-primary">Wearables</span> <span class="badge badge-primary">Solar Harvesting</span> <span class="badge badge-primary">Motion Sensing</span> <span class="badge badge-primary">Simulation</span>
+tier:           "A*"
+status:         "Accepted"
+tags:
+  - Wearables
+  - Solar Harvesting
+  - Motion Sensing
+  - Simulation
 authors:
   - Y. Ghalwash
   - A. Khamis

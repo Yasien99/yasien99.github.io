@@ -1,0 +1,38 @@
+{%- comment -%}
+Venue line + tier/status/topic badges for a publication.
+Shared by the desktop and mobile variants of widgets/publication_item.html.
+{%- endcomment -%}
+{%- assign item = include.item -%}
+
+<p class="mt-0 mb-1 small">
+    {{ item.pub_pre }}<i>{{ item.pub }}</i>{{ item.pub_post }} {{ item.pub_date }} {{ item.pub_last }}
+    {%- if item.tier %}
+    <span class="badge badge-tier ml-1">{{ item.tier }}</span>
+    {%- endif -%}
+    {%- if item.status and item.status != "Published" %}
+    <span class="badge badge-status badge-status-{{ item.status | slugify }} ml-1">{{ item.status }}</span>
+    {%- endif %}
+    <span data-semantic-scholar-id="{{ item.semantic_scholar_id }}"></span>
+</p>
+
+{%- if item.tags %}
+<p class="mt-0 mb-1">
+    {%- for tag in item.tags %}
+    <span class="badge badge-topic">{{ tag }}</span>
+    {%- endfor %}
+</p>
+{%- endif -%}
+
+{%- if item.abstract %}
+<p class="mt-0 mb-1 small text-muted">{{ item.abstract }}</p>
+{%- endif -%}
+
+<p class="small pb-0 mb-0 lh-125 text-muted abstract-links">
+    {% for link in item.links %}
+    {% if link[1].url %}
+    <a target="{{ link[1]['target'] }}" href="{{ link[1]['url'] }}">[{{ link[0] }}]</a>
+    {% else %}
+    <a target="_blank" href="{{ link[1] }}">[{{ link[0] }}]</a>
+    {% endif %}
+    {% endfor %}
+</p>

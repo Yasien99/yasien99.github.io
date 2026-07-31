@@ -1,31 +1,77 @@
 ---
 layout: default
 title : Publications
-navbar_title: Publication
+navbar_title: Publications
 body_attr: >-
-  data-spy="scroll" data-target="#navbar-year" data-offset="100"
+  data-spy="scroll" data-target="#navbar-section" data-offset="100"
 ---
 
-{% assign pubs_by_year = site.publications | sort: "date" | reverse | group_by_exp: "item", "item.date | date: '%Y'" %}
+{%- comment -%}
+Publications are grouped by venue type. Each entry in _publications carries a
+`type:` of "journal" or "conference"; anything without one falls under Conference
+& Workshop Papers.
+{%- endcomment -%}
+{% assign all_pubs = site.publications | sort: "date" | reverse %}
+{% assign journal_pubs = all_pubs | where: "type", "journal" %}
+{% assign conference_pubs = all_pubs | where_exp: "item", "item.type != 'journal'" %}
+{% assign num_pubs = all_pubs | size %}
+{% assign astar_pubs = all_pubs | where: "tier", "A*" | size %}
 
 <div class="row">
     <div class="col-12 col-lg-10">
-        {% for year in pubs_by_year %}
-        {% assign num_papers = year.items | size %}
-        <h2 class="pt-4" id="year-{{ year.name }}">{{ year.name }}</h2>
+        <h2 class="pt-4 mb-1"><i class="fas fa-book"></i> Publications</h2>
+        <p class="text-muted mb-2">
+            {{ num_pubs }} papers{% if astar_pubs > 0 %}, {{ astar_pubs }} at A*-ranked venues{% endif %}.
+            Author names in <strong>bold</strong> are mine.
+            {%- if site.data.profile.gscholar %}
+            {%- if site.data.profile.gscholar contains 'scholar.google' -%}
+            {%- assign gscholar_url = site.data.profile.gscholar -%}
+            {%- else -%}
+            {%- assign gscholar_url = 'https://scholar.google.com/citations?user=' | append: site.data.profile.gscholar -%}
+            {%- endif %}
+            See also my <a target="_blank" href="{{ gscholar_url }}">Google Scholar profile</a>.
+            {%- endif %}
+        </p>
+
+        {% assign num_journals = journal_pubs | size %}
+        {% if num_journals > 0 %}
+        <h2 class="pt-4" id="section-journals">
+            Journal Articles
+            <span class="text-muted h6 font-weight-normal">
+                {{ num_journals }} paper{% if num_journals != 1 %}s{% endif %}
+            </span>
+        </h2>
         <div class="my-0 p-0 bg-white shadow-sm rounded-xl">
-            {% for item in year.items %}
+            {% for item in journal_pubs %}
                 {% include widgets/publication_item.html item=item hide_bottom_border=forloop.last first=forloop.first last=forloop.last %}
             {% endfor %}
         </div>
-        {% endfor %}
+        {% endif %}
+
+        {% assign num_conferences = conference_pubs | size %}
+        {% if num_conferences > 0 %}
+        <h2 class="pt-4" id="section-conferences">
+            Conference &amp; Workshop Papers
+            <span class="text-muted h6 font-weight-normal">
+                {{ num_conferences }} paper{% if num_conferences != 1 %}s{% endif %}
+            </span>
+        </h2>
+        <div class="my-0 p-0 bg-white shadow-sm rounded-xl">
+            {% for item in conference_pubs %}
+                {% include widgets/publication_item.html item=item hide_bottom_border=forloop.last first=forloop.first last=forloop.last %}
+            {% endfor %}
+        </div>
+        {% endif %}
     </div>
 
     <div class="col-2 d-none d-lg-block">
-        <div id="navbar-year" class="nav nav-pills flex-column sticky-top" style="top: 80px">
-            {% for year in pubs_by_year %}
-            <a class="nav-link d-block" href="#year-{{ year.name }}">{{ year.name }}</a>
-            {% endfor %}
+        <div id="navbar-section" class="nav nav-pills flex-column sticky-top" style="top: 80px">
+            {% if num_journals > 0 %}
+            <a class="nav-link d-block" href="#section-journals">Journals</a>
+            {% endif %}
+            {% if num_conferences > 0 %}
+            <a class="nav-link d-block" href="#section-conferences">Conferences</a>
+            {% endif %}
         </div>
     </div>
 

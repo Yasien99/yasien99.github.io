@@ -34,13 +34,31 @@
                     </div>
                 </div>
 
-                <div class="row small">
+                {% if site.data.profile.tagline %}
+                <div class="row">
+                    <div class="col text-center small text-muted font-italic pt-2">
+                        {{ site.data.profile.tagline }}
+                    </div>
+                </div>
+                {% endif %}
+
+                <div class="row small pt-2">
                     <div class="col text-center">
                         <a class="email-text" href="mailto:{{ site.data.profile.email | encode_email }}">
                             {{ site.data.profile.email | replace: "@", "(at)" }}
                         </a>
                     </div>
                 </div>
+
+                {% if site.data.profile.cv_link %}
+                <div class="row pt-3">
+                    <div class="col text-center">
+                        <a class="btn btn-sm btn-outline-secondary btn-block" target="_blank" href="{{ site.data.profile.cv_link | relative_url }}">
+                            <i class="fas fa-file-alt"></i> Curriculum Vitae
+                        </a>
+                    </div>
+                </div>
+                {% endif %}
 
                 <div class="row pt-2">
                     <div class="col text-center h4">

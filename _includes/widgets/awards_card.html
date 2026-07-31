@@ -1,0 +1,24 @@
+{%- comment -%}
+Compact list of the most recent honors for the homepage.
+Pass `limit` to cap how many are shown.
+{%- endcomment -%}
+{%- assign awards = site.data.profile.awards -%}
+{%- if awards and awards.size > 0 -%}
+<div class="my-3 bg-white shadow-sm rounded-xl">
+    <h6 class="p-3 mb-0 border-bottom border-gray">
+        <i class="fas fa-award"></i> Honors &amp; Awards
+        <a href="{{ 'awards' | relative_url }}">(view all <i class="fas fa-angle-double-right"></i>)</a>
+    </h6>
+    <div class="px-3 pb-2 pt-1 small">
+        {% for item in awards limit: include.limit %}
+        <div class="d-flex py-2 {% unless forloop.first %}border-top border-gray{% endunless %}">
+            <div class="mr-3 text-muted no-break">{{ item.date }}</div>
+            <div>
+                <span class="font-weight-bold">{{ item.name }}</span>
+                {%- if item.issuer %}<span class="text-muted"> &mdash; {{ item.issuer }}</span>{% endif %}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{%- endif -%}

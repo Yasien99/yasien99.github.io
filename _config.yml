@@ -14,11 +14,14 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://yasien99.github.io" # used to build absolute URLs for Open Graph / schema.org tags
+title: "Yasien Ghalwash"
 
 # Build settings
 markdown: kramdown
 plugins:
   - jekyll-email-protect
+  - jekyll-sitemap
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -33,10 +36,19 @@ exclude:
   - vendor/ruby/
   - old_website
 
-# timezone: Asia/Shanghai
+timezone: Australia/Brisbane
 
 collections:
   - publications
   - news
   - showcase
   - posts
+
+# The blog/showcase pages still hold the demo content that ships with the template,
+# so keep them out of the sitemap until they carry real content.
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      sitemap: false

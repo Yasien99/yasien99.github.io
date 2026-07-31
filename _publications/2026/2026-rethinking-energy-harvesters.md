@@ -3,9 +3,13 @@ title:          "Rethinking Energy Harvesters as Sensors: A New Paradigm for Con
 date:           2026-01-01 00:00:00 +0000
 selected:       true
 pub:            "IEEE PerCom PhD Forum"
+type:           "conference"
 pub_date:       "2026"
-abstract: >-
-  <span class="badge badge-primary">Energy Harvesting</span> <span class="badge badge-primary">Sensors</span>
+status:         "Accepted"
+tags:
+  - Energy Harvesting
+  - Sensing
+  - Doctoral Research
 authors:
   - Y. Ghalwash
 links:
