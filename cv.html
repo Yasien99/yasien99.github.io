@@ -1,0 +1,70 @@
+---
+layout: default
+title: CV
+navbar_title: CV
+---
+
+<div class="row pt-4">
+    <div class="col-12 col-lg-10 offset-lg-1">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2 class="mb-0"><i class="fas fa-file-alt"></i> Curriculum Vitae</h2>
+            {% if site.data.profile.cv_link %}
+            <a href="{{ site.data.profile.cv_link | relative_url }}" target="_blank" class="btn btn-sm btn-outline-secondary">
+                <i class="fas fa-file-pdf mr-1"></i> Download CV
+            </a>
+            {% endif %}
+        </div>
+
+        {% if site.data.profile.education %}
+        <div class="card border-0 shadow-sm bg-white mb-4">
+            <div class="card-body p-4">
+                <h6 class="mb-3"><i class="fas fa-graduation-cap mr-1"></i> Education</h6>
+                <ul class="list-unstyled mb-0">
+                    {% for item in site.data.profile.education %}
+                    <li class="media mb-3 {% unless forloop.last %}border-bottom pb-3{% endunless %}">
+                        {% if item.logo %}<img src="{{ item.logo | relative_url }}" alt="{{ item.name }}" style="width: 28px;" class="mr-3 mt-1">{% endif %}
+                        <div class="media-body d-flex justify-content-between align-items-start">
+                            <div>
+                                <div class="font-weight-bold">{{ item.name }}</div>
+                                <div class="text-muted small">{{ item.position }}</div>
+                            </div>
+                            <div class="text-muted small no-break ml-3"><em>{{ item.date }}</em></div>
+                        </div>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+        {% endif %}
+
+        {% if site.data.profile.awards %}
+        <div class="card border-0 shadow-sm bg-white mb-4">
+            <div class="card-body p-4">
+                <h6 class="mb-3"><i class="fas fa-award mr-1"></i> Honors &amp; Awards</h6>
+                <ul class="list-unstyled mb-0">
+                    {% for item in site.data.profile.awards %}
+                    <li class="d-flex justify-content-between align-items-start {% unless forloop.last %}mb-2{% endunless %}">
+                        <div>{{ item.name }}</div>
+                        <div class="text-muted small no-break ml-3"><em>{{ item.date }}</em></div>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+        {% endif %}
+
+        {% if site.data.profile.research_topics %}
+        <div class="card border-0 shadow-sm bg-white mb-4">
+            <div class="card-body p-4">
+                <h6 class="mb-3"><i class="fas fa-flask mr-1"></i> Research Interests</h6>
+                <ul class="list-unstyled mb-0">
+                    {% for item in site.data.profile.research_topics %}
+                    <li>{{ item.name }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+        {% endif %}
+
+    </div>
+</div>

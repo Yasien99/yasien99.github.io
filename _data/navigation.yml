@@ -5,5 +5,7 @@ pages:
   url: /publications
 - name: Awards
   url: /awards
+- name: CV
+  url: /cv
 - name: Videos
   url: /videos
