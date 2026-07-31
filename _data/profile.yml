@@ -18,11 +18,39 @@ gscholar: 75Z_2_MAAAAJ  # This is an example, replace it with your own Google Sc
 linkedin: yasien99
 # orcid: 0000-0000-0000-0000
 
+# Used for <meta> tags, Open Graph / Twitter cards and schema.org markup.
+seo_description: >-
+  Yasien Ghalwash is a Ph.D. student in Information Technology at the Queensland
+  University of Technology (QUT), working on wearable computing, energy-harvesting
+  sensing and embedded machine learning.
+seo_keywords: >-
+  Yasien Ghalwash, QUT, energy harvesting, solar harvester, wearable computing,
+  motion tracking, pervasive computing, embedded machine learning
+
+# One-line framing shown under the name on the homepage.
+tagline: >-
+  Turning wearable energy harvesters into sensors for continuous, energy-efficient motion tracking.
+
+supervisors:
+- name: Prof. Raja Jurdak
+  role: Principal Supervisor
+- name: Dr. Sara Khalifa
+  role: Associate Supervisor
+
 short_bio_text_justify: false
 short_bio: >-
   <p>I am a Ph.D. student in Information Technology at the Queensland University of Technology (QUT) in Brisbane, Australia. I am supervised by Prof. Raja Jurdak and Dr. Sara Khalifa.</p>
   <br/><p>Currently, my doctoral thesis focuses on "Rethinking Energy Harvesters as Sensors: A New Paradigm for Continuous Motion Tracking." I am exploring how to leverage wearable solar harvesters to achieve continuous and energy-efficient tracking capabilities.</p>
   <br/><p>I previously graduated with a BSc in Biomedical Engineering from Cairo University, where I gained a strong foundation in Machine Learning, Computer Vision, Digital Signal Processing, and Embedded Systems.</p>
+
+# Framing for the research / publications sections.
+thesis:
+  title: "Rethinking Energy Harvesters as Sensors: A New Paradigm for Continuous Motion Tracking"
+  summary: >-
+    A wearable solar harvester is normally treated purely as a power source. My thesis asks what
+    happens when the harvested current is read as a signal instead: the light falling on a body-worn
+    panel changes continuously with how the wearer moves. Recovering motion from that signal makes
+    tracking possible at a fraction of the energy cost of conventional inertial sensing.
 
 portrait_url: /assets/images/photos/avatar.jpg
 # portrait_caption: >-
@@ -44,21 +72,40 @@ education:
 #   position: Research Intern
 #   date: Sep. 2019 - Jul. 2021
 
+# `type` selects the icon shown on the Awards page: award | grant | scholarship
 awards:
-- name: Student Travel Grant, IEEE PERCOM
+- name: Student Travel Grant
+  issuer: IEEE PerCom
+  type: grant
   date: 2026
-- name: Best Poster Award, QUT Energy Transition Centre Retreat
+- name: Best Poster Award
+  issuer: QUT Energy Transition Centre Retreat
+  type: award
   date: 2025
-- name: Best Presentation Award, IS Doctoral Consortium, School of Information Systems, QUT
+- name: Best Presentation Award
+  issuer: IS Doctoral Consortium, School of Information Systems, QUT
+  type: award
   date: 2025
-- name: HDR Accomplishment Award, School of Information Systems, QUT
+- name: HDR Accomplishment Award
+  issuer: School of Information Systems, QUT
+  type: award
   date: 2025
 - name: Queensland University of Technology Postgraduate Research Award (QUTPRA)
+  issuer: Queensland University of Technology
+  type: scholarship
   date: 2024
 - name: Queensland University of Technology HDR Tuition Fee Sponsorship
+  issuer: Queensland University of Technology
+  type: scholarship
   date: 2024
 
 research_topics:
 - name: Wearable Computing
+  icon: fas fa-user-astronaut
+  description: Body-worn sensing systems and what they can recover about their wearer.
 - name: Energy Harvesting Sensing
+  icon: fas fa-solar-panel
+  description: Reading a harvester's output as a sensing modality, not only as a power supply.
 - name: Embedded Machine Learning
+  icon: fas fa-microchip
+  description: Models small and cheap enough to run on the microcontrollers inside those devices.

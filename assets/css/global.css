@@ -91,3 +91,99 @@ div.lazy {
 .email-text {
     font-family: Source Code Pro, monospace;
 }
+
+/* ---------- Research output at a glance (homepage) ---------- */
+
+.metric-tile + .metric-tile {
+    border-left: 1px solid #eceef1;
+}
+
+@media (max-width: 767.98px) {
+    /* Two per row on small screens, so only the odd columns get a left border. */
+    .metric-tile:nth-child(odd) {
+        border-left: 0;
+    }
+    .metric-tile:nth-child(n + 3) {
+        border-top: 1px solid #eceef1;
+    }
+}
+
+.metric-value {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.1;
+    color: #212529;
+}
+
+.metric-label {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #6c757d;
+}
+
+/* ---------- Research topic tiles ---------- */
+
+.topic-tile {
+    background-color: #f6f8fa;
+    border: 1px solid #eceef1;
+}
+
+.topic-name {
+    font-weight: 700;
+    font-size: 0.95rem;
+    margin-bottom: 0.15rem;
+}
+
+/* ---------- Publication badges ---------- */
+
+.badge-tier {
+    background-color: #b02a37;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
+.badge-status {
+    font-weight: 600;
+    background-color: #e9ecef;
+    color: #495057;
+}
+
+.badge-status-under-review {
+    background-color: #fff3cd;
+    color: #7a5b00;
+}
+
+.badge-status-accepted {
+    background-color: #d9f2e3;
+    color: #14603a;
+}
+
+.badge-topic {
+    background-color: #eef1f5;
+    color: #56606b;
+    font-weight: 500;
+    margin-right: 0.25rem;
+}
+
+/* ---------- Awards ---------- */
+
+.award-icon {
+    width: 2rem;
+    flex: 0 0 2rem;
+    color: #b08d2a;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* ---------- News archive ---------- */
+
+.news-body > *:last-child {
+    margin-bottom: 0;
+}
+
+.news-body ul {
+    padding-left: 1.2rem;
+    margin-bottom: 0.5rem;
+}

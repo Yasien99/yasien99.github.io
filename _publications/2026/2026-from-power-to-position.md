@@ -1,11 +1,15 @@
 ---
-title:          "From power to position: Continuous trajectory tracking with wearable solar harvesters"
-date:           2026-01-01 00:00:00 +0000
+title:          "From power to position: Continuous Trajectory Tracking with Wearable Solar Harvesters"
+date:           2026-01-02 00:00:00 +0000
 selected:       true
-pub:            "IEEE Transactions on Mobile Computing (under review) (D1 Journal)"
+pub:            "IEEE Transactions on Mobile Computing"
+type:           "journal"
 pub_date:       "2026"
-abstract: >-
-  <span class="badge badge-primary">Solar Harvesters</span> <span class="badge badge-primary">Motion Tracking</span>
+tier:           "D1"
+status:         "Under Review"
+tags:
+  - Solar Harvesters
+  - Trajectory Tracking
 authors:
   - Y. Ghalwash
   - A. Khamis

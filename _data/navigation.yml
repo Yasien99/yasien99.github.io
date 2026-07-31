@@ -1,11 +1,13 @@
 pages:
 - name: Home
   url: /
-- name: Publication
+- name: Publications
   url: /publications
 - name: Awards
   url: /awards
 - name: CV
   url: /cv
+- name: News
+  url: /news
 - name: Videos
   url: /videos

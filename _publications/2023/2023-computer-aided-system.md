@@ -2,10 +2,14 @@
 title:          "Computer-Aided System for Breast Cancer Lesion Segmentation and Classification Using Ultrasound Images"
 date:           2023-01-01 00:00:00 +0000
 selected:       true
-pub:            "EHB 2023"
+pub:            "IEEE EHB"
+type:           "conference"
 pub_date:       "2023"
-abstract: >-
-  <span class="badge badge-primary">Deep Learning</span> <span class="badge badge-primary">Ultrasound</span>
+status:         "Published"
+tags:
+  - Deep Learning
+  - Medical Imaging
+  - Ultrasound
 authors:
   - Saied Salem
   - Ahmed Mostafa
