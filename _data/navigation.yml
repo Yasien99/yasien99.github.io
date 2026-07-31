@@ -6,7 +6,8 @@ pages:
 - name: Awards
   url: /awards
 - name: CV
-  url: /cv
+  url: /assets/files/Yasien_Ghalwash_CV.pdf
+  target: _blank
 - name: News
   url: /news
 - name: Videos

@@ -20,4 +20,6 @@ authors:
   - R. Jurdak
 links:
   PDF: https://eprints.qut.edu.au/266590/
+  Code: https://github.com/Yasien99/SolarSim
+  Website: https://yasien99.github.io/SolarSim/
 ---
