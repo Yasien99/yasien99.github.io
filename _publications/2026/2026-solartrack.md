@@ -2,6 +2,7 @@
 title:          "SolarTrack: Exploring the Continuous Tracking Capabilities of Wearable Solar Harvesters"
 date:           2026-01-03 00:00:00 +0000
 selected:       true
+cover:          /assets/images/covers/2026-solartrack.png
 pub:            "IEEE PerCom"
 type:           "conference"
 pub_date:       "2026"

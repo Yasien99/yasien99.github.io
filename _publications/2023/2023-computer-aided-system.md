@@ -2,6 +2,7 @@
 title:          "Computer-Aided System for Breast Cancer Lesion Segmentation and Classification Using Ultrasound Images"
 date:           2023-01-01 00:00:00 +0000
 selected:       true
+cover:          /assets/images/covers/2023-computer-aided-system.jpg
 pub:            "IEEE EHB"
 type:           "conference"
 pub_date:       "2023"
