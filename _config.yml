@@ -16,6 +16,7 @@
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://yasien99.github.io" # used to build absolute URLs for Open Graph / schema.org tags
 title: "Yasien Ghalwash"
+google_analytics_id: "G-KLGGGHQ9WS"
 
 # Build settings
 markdown: kramdown
