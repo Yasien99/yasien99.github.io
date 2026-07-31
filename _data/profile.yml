@@ -74,6 +74,10 @@ education:
 
 # `type` selects the icon shown on the Awards page: award | grant | scholarship
 awards:
+- name: Gary Marsden Travel Award
+  issuer: SIGCHI
+  type: grant
+  date: 2026
 - name: Student Travel Grant
   issuer: IEEE PerCom
   type: grant
